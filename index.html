@@ -265,9 +265,10 @@
 
 		           </section>
 
-        <div id="carrinho">
+ <div id="carrinho">
             <h2>Carrinho</h2>
             <ul id="itensCarrinho"></ul>
+            <p>Frete: R$<span id="freteValor">10.00</span></p> <!-- Exibição do valor do frete -->
             <p>Total: R$<span id="totalCarrinho">0.00</span></p>
             <button onclick="enviarPedido()">Enviar Pedido pelo WhatsApp</button>
         </div>
@@ -291,7 +292,7 @@
                 </select>
                 <div id="pixInfo" style="display: none;">
                     <p>Chave Pix: mariaeduardacilenepedra@gmail.com</p>
-					<p>Chave Pix: (27) 99959-5386</p>
+                    <p>Chave Pix: (27) 99959-5386</p>
                 </div>
                 <div id="trocoInfo" style="display: none;">
                     <label for="troco">Você precisa de troco?</label>
@@ -312,6 +313,7 @@
     <script>
         let carrinho = [];
         let total = 0;
+        const valorFrete = 3.00; // Defina o valor do frete
 
         function adicionarAoCarrinho(nome, preco) {
             carrinho.push({ nome, preco });
@@ -327,7 +329,10 @@
                 li.textContent = `${item.nome} - R$${item.preco.toFixed(2)}`;
                 itensCarrinho.appendChild(li);
             });
-            document.getElementById('totalCarrinho').textContent = total.toFixed(2);
+
+            const totalComFrete = total + valorFrete; // Calcula o total com o frete
+            document.getElementById('freteValor').textContent = valorFrete.toFixed(2); // Atualiza o valor do frete
+            document.getElementById('totalCarrinho').textContent = totalComFrete.toFixed(2); // Atualiza o total
         }
 
         function enviarPedido() {
@@ -381,8 +386,8 @@
 
             // Cria a mensagem para enviar pelo WhatsApp
             const pedido = carrinho.map(item => `${item.nome} - R$${item.preco.toFixed(2)}`).join('%0A');
-            const totalStr = `Total: R$${total.toFixed(2)}`;
-            let mensagem = `Nome: ${nome}%0AEndereço: ${endereco}%0ATelefone: ${telefone}%0AForma de Pagamento: ${formaPagamento}`;
+            const totalStr = `Total: R$${(total + valorFrete).toFixed(2)}`; // Total inclui o frete
+            let mensagem = `Nome: ${nome}%0AEndereço: ${endereco}%0ATelefone: ${telefone}%0AForma de Pagamento: ${formaPagamento}%0AFrete: R$${valorFrete.toFixed(2)}`; // Mensagem inclui o frete
 
             if (formaPagamento === 'dinheiro') {
                 mensagem += `%0ATransação: Precisa de troco - ${precisaTroco}`;
@@ -395,7 +400,7 @@
 
             const whatsappUrl = `https://wa.me/5527999595386?text=${mensagem}`; // Troque pelo seu número
             window.open(whatsappUrl, '_blank'); // Abre o WhatsApp em uma nova aba
-            
+
             // Limpa o carrinho e esconde o formulário
             carrinho = [];
             total = 0;
