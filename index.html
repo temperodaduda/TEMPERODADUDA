@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEMPERO DUDA</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+	<img src="logo.jpg" alt="Logo da Loja" class="logo">
+        <h1>TEMPERO DA DUDA</h1>
+        <nav>
+            <ul>
+                <li><a href="#tradicionais">Hot Dogs Tradicionais</a></li>
+                <li><a href="#cheddar">Hot Dog Cheddar</a></li>
+                <li><a href="#Hot Dog Gourmet">Hot Dog Gourmet</a></li>
+				<li><a href="#Hot Dog Bacon">Hot Dog Bacon</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção de Hot Dogs Tradicionais -->
+        <section id="tradicionais">
+            <h2>Hot Dog Tradicionais</h2>
+            <div class="produto">
+                <h3>Dog Simples</h3>
+                <p>Ingredientes: Pão, Molho, Ervilha, Milho, Presunto, Cenoura e Batata palha.</p>
+                <p>Preço: R$14,49</p>
+                <button onclick="adicionarAoCarrinho('Dog Simples', 14.49)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <h3>Dog Frango</h3>
+                <p>Ingredientes: Pão, Molho, Ervilha, Milho, Presunto, Cenoura, Batata palha e Frango.</p>
+                <p>Preço: R$15,49</p>
+                <button onclick="adicionarAoCarrinho('Dog Frango', 15.49)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <h3>Dog Frango com Muçarela</h3>
+                <p>Ingredientes: Pão, Molho, Ervilha, Milho, Presunto, Cenoura, Batata palha, Frango e Muçarela.</p>
+                <p>Preço: R$17,99</p>
+                <button onclick="adicionarAoCarrinho('Dog Frango com Muçarela', 17.99)">Adicionar ao Carrinho</button>
+            </div>
+			<div class="produto">
+                <h3>Dog Frango com Catupiry</h3>
+                <p>Ingredientes: Pão, Molho, Ervilha, Milho, Presunto, Cenoura, Batata palha, Frango e Catupiry.</p>
+                <p>Preço: R$16,99</p>
+                <button onclick="adicionarAoCarrinho('Dog Frango com Catupiry', 16.99)">Adicionar ao Carrinho</button>
+            </div>  
+			<div class="produto">
+                <h3>Dog Catupiry</h3>
+                <p>Ingredientes: Pão, Molho, Ervilha, Milho, Presunto, Cenoura, Batata palha, Ovo e Catupiry.</p>
+                <p>Preço: R$15,49</p>
+                <button onclick="adicionarAoCarrinho('Dog Catupiry', 15.49)">Adicionar ao Carrinho</button>
+            </div>
+   		   	<div class="produto">
+                <h3>Dog Muçarela</h3>
+                <p>Ingredientes: Pão, Molho, Ervilha, Milho, Presunto, Cenoura, Batata palha e Muçarela.</p>
+                <p>Preço: R$17,99</p>
+                <button onclick="adicionarAoCarrinho('Dog Muçarela', 17.99)">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+
+        <!-- Próxima categoria (Cheddar) pode ser adicionada aqui -->
+        <section id="cheddar">
+            <h2>Hot Dog Cheddar</h2>
+             <div class="produto">
+                <h3>Dog Cheddar</h3>
+                <p>Ingredientes: Pão, Molho, Cheddar, Ervilha, Milho, Presunto, Alface, Cenoura e Batata palha.</p>
+                <p>Preço: R$18,99</p>
+                <button onclick="adicionarAoCarrinho('Hot Dog Cheddar', 18.99)">Adicionar ao Carrinho</button>
+            </div>
+		<div class="produto">
+                <h3>Dog Cheddar com Muçarela</h3>
+                <p>Ingredientes: Pão, Molho, Cheddar, Ervilha, Milho, Presunto, Alface, Cenoura, Batata palha e Muçarela.</p>
+                <p>Preço: R$20,49</p>
+                <button onclick="adicionarAoCarrinho('Dog Cheddar com Muçarela', 20.49)">Adicionar ao Carrinho</button>
+            </div>
+				<div class="produto">
+                <h3>Dog Cheddar com Frango</h3>
+                <p>Ingredientes: Pão, Molho, Cheddar, Ervilha, Milho, Presunto, Alface, Cenoura, Batata palha e Frango.</p>
+                <p>Preço: R$18,99</p>
+                <button onclick="adicionarAoCarrinho('Dog Cheddar com Frango', 18.99)">Adicionar ao Carrinho</button>
+            </div>
+			    <div class="produto">
+                <h3>Dog Cheddar com Frango e Catupiry</h3>
+                <p>Ingredientes: Pão, Molho, Cheddar, Ervilha, Milho, Presunto, Alface, Cenoura, Batata palha, Frango e Catupiry.</p>
+                <p>Preço: R$20,49</p>
+                <button onclick="adicionarAoCarrinho('Dog Cheddar com Frango e Catupiry', 20.49)">Adicionar ao Carrinho</button>
+            </div>
+			    </div>
+			    <div class="produto">
+                <h3>Dog Cheddar com Frango e Muçarela</h3>
+                <p>Ingredientes: Pão, Molho, Cheddar, Ervilha, Milho, Presunto, Alface, Cenoura, Batata palha, Frango e Muçarela.</p>
+                <p>Preço: R$22,49</p>
+                <button onclick="adicionarAoCarrinho('Dog Cheddar com Frango e Muçarela', 22.49)">Adicionar ao Carrinho</button>
+            </div>
+			</div>
+			    <div class="produto">
+                <h3>Dog Cheddar com Frango e Bacon</h3>
+                <p>Ingredientes: Pão, Molho, Cheddar, Ervilha, Milho, Presunto, Alface, Cenoura, Batata palha, Frango e Bacon.</p>
+                <p>Preço: R$20,99</p>
+                <button onclick="adicionarAoCarrinho('Dog Cheddar com Frango e Bacon', 20.99)">Adicionar ao Carrinho</button>
+            </div>
+			<div class="produto">
+                <h3>Dog Cheddar com Bacon e Muçarela</h3>
+                <p>Ingredientes: Pão, Molho, Cheddar, Ervilha, Milho, Presunto, Alface, Cenoura, Batata palha, Bacon e Muçarela.</p>
+                <p>Preço: R$sem preço</p>
+                <button onclick="adicionarAoCarrinho('Dog Cheddar com Bacon e Muçarela', sem preço)">Adicionar ao Carrinho</button>
+            </div><!-- Aqui vamos adicionar os sabores dessa categoria mais tarde -->
+        </section>
+
+        <section id="Hot Dog Bacon">
+		        <h2>Hot Dog Bacon</h2>
+		   <div class="produto">
+                <h3>Dog Bacon</h3>
+                <p>Ingredientes: Pão, Molho, Bacon, Ervilha, Milho, Alface, Presunto, Cenoura e Batata palha.</p>
+                <p>Preço: R$ 19,49</p>
+                <button onclick="adicionarAoCarrinho('Dog Bacon', 19.49)">Adicionar ao Carrinho</button>
+           </div>
+           <div class="produto">
+               <h3>Dog Bacon com Frango</h3>
+               <p>Ingredientes: Pão, Molho, Bacon, Ervilha, Milho, Alface, Presunto, Cenoura, Batata palha e Frango.</p>
+               <p>Preço: R$ 20,49</p>
+               <button onclick="adicionarAoCarrinho('Dog Bacon com Frango', 20.49)">Adicionar ao Carrinho</button>
+           </div>
+		   <div class="produto">
+              <h3>Dog Bacon com Frango e Catupiry</h3>
+              <p>Ingredientes: Pão, Molho, Bacon, Ervilha, Milho, Alface, Presunto, Cenoura, Batata palha, Frango e Catupiry.</p>
+              <p>Preço: R$ 21,49</p>
+              <button onclick="adicionarAoCarrinho('Dog Bacon com Frango e Catupiry', 21.49)">Adicionar ao Carrinho</button>
+           </div>
+		   <div class="produto">
+              <h3>Dog Bacon com Frango e Muçarela</h3>
+              <p>Ingredientes: Pão, Molho, Bacon, Ervilha, Milho, Alface, Presunto, Cenoura, Batata palha, Frango e Muçarela.</p>
+              <p>Preço: R$ 22,99</p>
+              <button onclick="adicionarAoCarrinho('Dog Bacon com Frango e Muçarela', 22.99)">Adicionar ao Carrinho</button>
+           </div>
+           <div class="produto">
+              <h3>Dog Bacon com Catupiry e Muçarela</h3>
+              <p>Ingredientes: Pão, Molho, Bacon, Ervilha, Milho, Alface, Presunto, Cenoura, Batata palha, Catupiry e Muçarela.</p>
+              <p>Preço: R$ 22,49</p>
+              <button onclick="adicionarAoCarrinho('Dog Bacon com Catupiry e Muçarela', 22.49)">Adicionar ao Carrinho</button>
+           </div>
+           <div class="produto">
+              <h3>Dog Bacon com Catupiry</h3>
+              <p>Ingredientes: Pão, Molho, Bacon, Ervilha, Milho, Alface, Presunto, Cenoura, Batata palha e Catupiry.</p>
+              <p>Preço: R$ 19,99</p>
+              <button onclick="adicionarAoCarrinho('Dog Bacon com Catupiry', 19.99)">Adicionar ao Carrinho</button>
+           </div>
+           <div class="produto">
+              <h3>Dog Bacon com Muçarela</h3>
+              <p>Ingredientes: Pão, Molho, Bacon, Ervilha, Milho, Alface, Presunto, Cenoura, Batata palha e Muçarela.</p>
+              <p>Preço: R$ 21,99</p>
+              <button onclick="adicionarAoCarrinho('Dog Bacon com Muçarela', 21.49)">Adicionar ao Carrinho</button>
+           </div>
+        <section id="Hot Dogs Pizza">
+            <h2>Hot Dog Pizza</h2>
+            <div class="produto">
+              <h3>Dog Alabama</h3>
+              <p>Ingredientes: Pão, Molho, Ervilha, Milho, Muçarela, Orégano, Tomate e Azeitona.</p>
+              <p>Preço: R$ 19,49</p>
+              <button onclick="adicionarAoCarrinho('Dog Alabama', 19.49)">Adicionar ao Carrinho</button>
+           </div>
+           <div class="produto">
+              <h3>Dog Califórnia</h3>
+              <p>Ingredientes: Pão, Molho, Ervilha, Milho, Bacon, Presunto, Batata Palha, Muçarela, Orégano, Tomate e Azeitona.</p>
+              <p>Preço: R$ 19,99</p>
+              <button onclick="adicionarAoCarrinho('Dog Califórnia', 19.99)">Adicionar ao Carrinho</button>
+           </div>
+           <div class="produto">
+              <h3>Dog Havaí</h3>
+              <p>Ingredientes: Pão, Molho, Ervilha, Milho, Catupiry, Presunto, Muçarela, Orégano, Calabresa e Cebola.</p>
+              <p>Preço: R$ 20,49</p>
+              <button onclick="adicionarAoCarrinho('Dog Havaí', 20.49)">Adicionar ao Carrinho</button>
+           </div>
+           <div class="produto">
+              <h3>Dog Flórida</h3>
+              <p>Ingredientes: Pão, Molho, Ervilha, Milho, Catupiry, Frango, Muçarela, Orégano, Tomate e Azeitona.</p>
+              <p>Preço: R$ 20,49</p>
+              <button onclick="adicionarAoCarrinho('Dog Flórida', 20.49)">Adicionar ao Carrinho</button>
+           </div>
+
+           <div class="produto">
+              <h3>Dog New York</h3>
+              <p>Ingredientes: Pão, Molho, Ervilha, Milho, Muçarela, Orégano, Calabresa, Cebola, Tomate e Ovo.</p>
+              <p>Preço: R$ 21,99</p>
+              <button onclick="adicionarAoCarrinho('>Dog New York', 21.99)">Adicionar ao Carrinho</button>
+           </div>
+
+           <div class="produto">
+              <h3>Dog Texas</h3>
+              <p>Ingredientes: Pão, Molho, Ervilha, Milho, Muçarela, Orégano, Calabresa, Cebola, Tomate e Ovo.</p>
+              <p>Preço: R$ 21,99</p>
+              <button onclick="adicionarAoCarrinho('Dog Texas', 21.99)">Adicionar ao Carrinho</button>
+           </div>
+
+           <div class="produto">
+              <h3>Dog São Paulo</h3>
+              <p>Ingredientes: Pão, Molho, Ervilha, Milho, Frango, Muçarela, Orégano, Calabresa, Cebola e Tomate.</p>
+              <p>Preço: R$ 22,49</p>
+              <button onclick="adicionarAoCarrinho('Dog São Paulo', 22.49)">Adicionar ao Carrinho</button>
+           </div>
+
+           <div class="produto">
+              <h3>Dog Simples com Queijo</h3>
+              <p>Ingredientes: Pão, Molho, Ervilha, Milho, Presunto, Cenoura e Queijo.</p>
+              <p>Preço: R$ 18,99</p>
+              <button onclick="adicionarAoCarrinho('Dog Simples com Queijo', 18.99)">Adicionar ao Carrinho</button>
+           </div>
+
+           <div class="produto">
+              <h3>Dog Cheddar com Queijo</h3>
+              <p>Ingredientes: Pão, Molho, Cheddar, Ervilha, Milho, Presunto, Cenoura e Queijo.</p>
+              <p>Preço: R$ 20,49</p>
+              <button onclick="adicionarAoCarrinho('Dog Cheddar com Queijo', 20.49)">Adicionar ao Carrinho</button>
+           </div>
+
+           <div class="produto">
+              <h3>Dog Catupiry com Queijo</h3>
+              <p>Ingredientes: Pão, Molho, Catupiry, Ervilha, Milho, Presunto, Cenoura e Queijo.</p>
+              <p>Preço: R$ 19,99</p>
+              <button onclick="adicionarAoCarrinho('Dog Catupiry com Queijo', 19.99)">Adicionar ao Carrinho</button>
+           </div>
+
+           <div class="produto">
+              <h3>Dog Muçarela com Queijo</h3>
+              <p>Ingredientes: Pão, Molho, Muçarela, Ervilha, Milho, Presunto, Cenoura e Queijo.</p>
+              <p>Preço: R$ 20,49</p>
+              <button onclick="adicionarAoCarrinho('Dog Muçarela com Queijo', 20.49)">Adicionar ao Carrinho</button>
+           </div>
+        </section>
+		
+        <section id="Hot Dog Gourmet">
+            <h2>Hot Dog Gourmet</h2>
+           <div class="produto">
+              <h3>Dog Gourmet Simples</h3>
+              <p>Ingredientes: Pão, Molho, Ervilha, Milho, Presunto, Cenoura, Batata palha e Azeite Trufado.</p>
+              <p>Preço: R$ 22,99</p>
+              <button onclick="adicionarAoCarrinho('Dog Gourmet Simples', 22.99)">Adicionar ao Carrinho</button>
+           </div>
+
+           <div class="produto">
+              <h3>Dog Gourmet com Frango</h3>
+              <p>Ingredientes: Pão, Molho, Ervilha, Milho, Presunto, Cenoura, Batata palha, Frango e Azeite Trufado.</p>
+              <p>Preço: R$ 24,49</p>
+              <button onclick="adicionarAoCarrinho('Dog Gourmet com Frango', 24.49)">Adicionar ao Carrinho</button>
+           </div>
+
+           <div class="produto">
+              <h3>Dog Gourmet com Bacon</h3>
+              <p>Ingredientes: Pão, Molho, Ervilha, Milho, Presunto, Cenoura, Batata palha, Bacon e Azeite Trufado.</p>
+              <p>Preço: R$ 24,99</p>
+              <button onclick="adicionarAoCarrinho('Dog Gourmet com Bacon', 24.99)">Adicionar ao Carrinho</button>
+           </div>
+
+           <div class="produto">
+              <h3>Dog Gourmet com Catupiry</h3>
+              <p>Ingredientes: Pão, Molho, Ervilha, Milho, Presunto, Cenoura, Batata palha e Azeite Trufado.</p>
+              <p>Preço: R$ 24,49</p>
+              <button onclick="adicionarAoCarrinho('Dog Gourmet com Catupiry', 22.99)">Adicionar ao Carrinho</button>
+           </div>
+
+		           </section>
+
+        <div id="carrinho">
+            <h2>Carrinho</h2>
+            <ul id="itensCarrinho"></ul>
+            <p>Total: R$<span id="totalCarrinho">0.00</span></p>
+            <button onclick="enviarPedido()">Enviar Pedido pelo WhatsApp</button>
+        </div>
+
+        <!-- Formulário de Entrega (oculto inicialmente) -->
+        <div id="formularioEntrega" style="display: none;">
+            <h2>Formulário de Entrega</h2>
+            <form id="entregaForm">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required><br><br>
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" required><br><br>
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" required><br><br>
+                <label for="pagamento">Forma de Pagamento:</label>
+                <select id="pagamento" required>
+                    <option value="" disabled selected>Selecione uma opção</option>
+                    <option value="pix">Pix</option>
+                    <option value="dinheiro">Dinheiro</option>
+                    <option value="cartao">Cartão</option>
+                </select>
+                <div id="pixInfo" style="display: none;">
+                    <p>Chave Pix: mariaeduardacilenepedra@gmail.com</p>
+					<p>Chave Pix: (27) 99959-5386</p>
+                </div>
+                <div id="trocoInfo" style="display: none;">
+                    <label for="troco">Você precisa de troco?</label>
+                    <select id="troco">
+                        <option value="nao">Não</option>
+                        <option value="sim">Sim</option>
+                    </select>
+                    <div id="quantidadeTroco" style="display: none;">
+                        <label for="quantidade">TROCO PARA QUANTOS?</label>
+                        <input type="number" id="quantidade" min="1"><br><br>
+                    </div>
+                </div>
+                <button type="button" onclick="finalizarPedido()">Finalizar Pedido</button>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        let carrinho = [];
+        let total = 0;
+
+        function adicionarAoCarrinho(nome, preco) {
+            carrinho.push({ nome, preco });
+            total += preco;
+            atualizarCarrinho();
+        }
+
+        function atualizarCarrinho() {
+            const itensCarrinho = document.getElementById('itensCarrinho');
+            itensCarrinho.innerHTML = '';
+            carrinho.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = `${item.nome} - R$${item.preco.toFixed(2)}`;
+                itensCarrinho.appendChild(li);
+            });
+            document.getElementById('totalCarrinho').textContent = total.toFixed(2);
+        }
+
+        function enviarPedido() {
+            // Mostra o formulário de entrega
+            document.getElementById("formularioEntrega").style.display = "block";
+
+            const pagamentoSelect = document.getElementById("pagamento");
+            pagamentoSelect.addEventListener("change", function() {
+                if (this.value === "pix") {
+                    document.getElementById("pixInfo").style.display = "block";
+                    document.getElementById("trocoInfo").style.display = "none";
+                } else if (this.value === "dinheiro") {
+                    document.getElementById("pixInfo").style.display = "none";
+                    document.getElementById("trocoInfo").style.display = "block";
+                } else {
+                    document.getElementById("pixInfo").style.display = "none";
+                    document.getElementById("trocoInfo").style.display = "none";
+                }
+            });
+
+            const trocoSelect = document.getElementById("troco");
+            trocoSelect.addEventListener("change", function() {
+                if (this.value === "sim") {
+                    document.getElementById("quantidadeTroco").style.display = "block";
+                } else {
+                    document.getElementById("quantidadeTroco").style.display = "none";
+                }
+            });
+        }
+
+        function finalizarPedido() {
+            const nome = document.getElementById("nome").value.trim();
+            const endereco = document.getElementById("endereco").value.trim();
+            const telefone = document.getElementById("telefone").value.trim();
+            const formaPagamento = document.getElementById("pagamento").value;
+            let precisaTroco = null;
+            let quantidadeTroco = null;
+
+            if (formaPagamento === 'dinheiro') {
+                precisaTroco = document.getElementById("troco").value === 'sim' ? 'Sim' : 'Não';
+                if (precisaTroco === 'Sim') {
+                    quantidadeTroco = document.getElementById("quantidade").value || '0';
+                }
+            }
+
+            // Verificar se os campos obrigatórios estão preenchidos
+            if (!nome || !endereco || !telefone || !formaPagamento) {
+                alert("Por favor, preencha todos os campos obrigatórios.");
+                return;
+            }
+
+            // Cria a mensagem para enviar pelo WhatsApp
+            const pedido = carrinho.map(item => `${item.nome} - R$${item.preco.toFixed(2)}`).join('%0A');
+            const totalStr = `Total: R$${total.toFixed(2)}`;
+            let mensagem = `Nome: ${nome}%0AEndereço: ${endereco}%0ATelefone: ${telefone}%0AForma de Pagamento: ${formaPagamento}`;
+
+            if (formaPagamento === 'dinheiro') {
+                mensagem += `%0ATransação: Precisa de troco - ${precisaTroco}`;
+                if (precisaTroco === 'Sim') {
+                    mensagem += `%0AQuantidade de Moedas: ${quantidadeTroco}`;
+                }
+            }
+
+            mensagem += `%0A\nSeu pedido:%0A${pedido}%0A${totalStr}`;
+
+            const whatsappUrl = `https://wa.me/5527999595386?text=${mensagem}`; // Troque pelo seu número
+            window.open(whatsappUrl, '_blank'); // Abre o WhatsApp em uma nova aba
+            
+            // Limpa o carrinho e esconde o formulário
+            carrinho = [];
+            total = 0;
+            atualizarCarrinho();
+            document.getElementById("formularioEntrega").style.display = "none";
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2024 TEMPERO DA DUDA - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

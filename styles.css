@@ -1,0 +1,160 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background: #ff6f61; /* Rosa vibrante */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+
+header h1 {
+    display: inline;
+}
+
+/* Estilos do conteúdo principal */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos do carrinho */
+#carrinho {
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px solid #ff6f61; /* Bordas do carrinho */
+    border-radius: 10px;
+    background: #ffe4e1; /* Rosa claro */
+}
+
+#carrinho h2 {
+    margin-bottom: 10px;
+    color: #ff6f61; /* Título do carrinho */
+}
+
+/* Estilos da lista de itens do carrinho */
+#itensCarrinho {
+    list-style-type: none;
+}
+
+#itensCarrinho li {
+    padding: 10px 0;
+    border-bottom: 1px dashed #ff6f61; /* Divisões em rosa */
+}
+
+/* Estilos do formulário */
+#formularioEntrega {
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px solid #ff6f61; /* Bordas do formulário */
+    border-radius: 10px;
+    background: #ffe4e1; /* Rosa claro */
+}
+
+#formularioEntrega h2 {
+    margin-bottom: 10px;
+    color: #ff6f61; /* Título do formulário */
+}
+
+/* Estilos dos campos do formulário */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ff6f61; /* Bordas dos campos */
+    border-radius: 5px;
+}
+
+/* Estilos do botão */
+button {
+    padding: 10px 15px;
+    background-color: #28a745; /* Verde vibrante */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    position: relative;
+}
+
+button:hover {
+    background-color: #218838; /* Verde escuro */
+}
+
+/* Emojis nos botões */
+button::before {
+    content: "🌭"; /* Emoji de hot dog */
+    margin-right: 10px;
+}
+
+/* Estilos do rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #ff6f61; /* Cor do rodapé */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+/* Estilo para os títulos dos produtos */
+.produto h3 {
+    color: #ff6f61; /* Cor dos títulos dos produtos */
+}
+
+/* Emoji ao lado dos títulos dos produtos */
+.produto h3::before {
+    content: "🌟"; /* Emoji de estrela */
+    margin-right: 10px;
+}
+/* Adicione isso ao seu CSS existente */
+
+/* Estilos do corpo */
+body {
+    font-family: 'Roboto', sans-serif; /* Use a fonte Roboto */
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background: #ff6f61; /* Rosa vibrante */
+    color: white;
+    padding: 15px; /* Diminui o padding */
+    text-align: center;
+    font-size: 1.5em; /* Diminui o tamanho da fonte */
+}
+
+/* Estilos do cabeçalho no mobile */
+@media (max-width: 600px) {
+    header {
+        font-size: 1.2em; /* Tamanho menor para dispositivos móveis */
+    }
+}
